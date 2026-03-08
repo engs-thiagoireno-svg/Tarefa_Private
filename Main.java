@@ -1,19 +1,16 @@
-package Projeto_Aluno;
+package Projeto_Animal;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Aluno aluno1 = new Aluno("Carlos");
+        Animal animal1 = new Animal("Rex", "Cachorro");
 
-        aluno1.adicionarNota(7);
-        System.out.println("Nota atual: " + aluno1.consultarNota());
+        animal1.consultarAnimal();
 
-        aluno1.adicionarNota(5);
+        animal1.mudarNome("Thor");
+        animal1.consultarAnimal();
 
-        aluno1.retirarNota(3);
-        System.out.println("Nota atual: " + aluno1.consultarNota());
-
-        aluno1.retirarNota(10);
+        animal1.mudarNome("");
     }
 }
