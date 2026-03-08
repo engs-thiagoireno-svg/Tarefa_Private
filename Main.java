@@ -1,16 +1,19 @@
+package Projeto_Aluno;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Livro livro1 = new Livro();
+        Aluno aluno1 = new Aluno("Carlos");
 
-        livro1.setTitulo("Dom Casmurro");
-        livro1.setAutor("Machado de Assis");
-        livro1.setAno(1899);
+        aluno1.adicionarNota(7);
+        System.out.println("Nota atual: " + aluno1.consultarNota());
 
-        System.out.println("Título: " + livro1.getTitulo());
-        System.out.println("Autor: " + livro1.getAutor());
-        System.out.println("Ano: " + livro1.getAno());
+        aluno1.adicionarNota(5);
 
+        aluno1.retirarNota(3);
+        System.out.println("Nota atual: " + aluno1.consultarNota());
+
+        aluno1.retirarNota(10);
     }
 }
